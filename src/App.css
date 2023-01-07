@@ -1,10 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  background-color: #E3AF7B;
+  height: 100vh;
+  color: white;
+  padding: 0.5em 0;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.parent_div{
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 0;
+  background-color: #3D4F8A;
+  /* height: 80%; */
+}
+.upper_half{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* background-color: red; */
+  justify-content: center;
+  margin-top: 10px;
+  gap: 1em;
+}
+.input_div input{
+  border: 2px solid grey;
+  padding: 4px 6px;
+  border-radius: 0.5em;
+  outline: none;
+}
+.btn_div{
+  display: flex;
+  gap: 1em;
+}
+.btn_div .deleteAll_btn{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.btn_div .add_btn:disabled{
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.btn_div .add_btn:enabled{
+  background-color: rgb(149, 216, 48);
+  color: black;
+  border: none;
+  border-radius: 0.5em;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.lower_half{
+  background-color: chocolate;
+  padding: 7px 5px;
+  border-radius: 8px;
+  width: 50%;
+  margin: 1em auto;
+  /* overflow-y: scroll; */
+  /* height: 70%; */
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 2px;
+  /* height: 12px; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
